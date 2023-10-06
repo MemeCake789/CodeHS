@@ -13,6 +13,7 @@ for i, file in enumerate(files):
 print("")
 
 # Ask the user which file to run
+print("To use input, click on the console screen.")
 file_number = int(input("Enter the number of the file you want to run : ")) - 1
 file_to_run = files[file_number]
 
