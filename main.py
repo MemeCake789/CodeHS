@@ -18,7 +18,7 @@ while True:
 
     # Ask the user which file to run
     print("To use input, click on the console screen.")
-    print("IMPORTANT: IF YOU WANT TO VIEW THE CODE, CLICK THE \"SHOW CODE\" ICON AT THE TOP RIGHT OF THE CONSOLE SCREEN")
+    print("IMPORTANT: IF YOU WANT TO VIEW THE CODE, CLICK THE \"SHOW CODE\" ICON AT THE TOP RIGHT OF THE CONSOLE SCREE ( YOU WILL HAVE TO REURUN THE CODE TO VIEW THE PROGRAM AGAIN )")
     print("\n")
     file_number = int(
         input("Enter the number of the file you want to run : ")) - 1
