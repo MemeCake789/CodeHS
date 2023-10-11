@@ -11,11 +11,13 @@ total_bill = bill_total + tip_amount
 amount_per_person = total_bill / people_count
 
 print(Style.RESET_ALL + "\n")
-print(Back.WHITE + Fore.BLACK + "----------------------------------")
+print(Fore.WHITE +  "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
 print("\n")
 print("Tip amount: " + str(tip_amount))
 print("Total bill: " + str(total_bill))
 print("Total amount per person: " + str(amount_per_person))
-print("\n")
-print(Back.WHITE + Fore.BLACK + "----------------------------------")
+print(Style.RESET_ALL + "\n")
+print(Fore.WHITE + "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬")
 print(Style.RESET_ALL)
+
+
