@@ -12,6 +12,10 @@ The code in this repository is organized as follows:
 - File: Restaurant Bill Calculator.py
   - Purpose: This file contains a Python program to calculate the total bill amount and amount per person for a restaurant bill. It prompts the user to enter the total amount on the bill, the desired tip percentage, and the number of people sharing the bill. It then calculates the tip amount, the total bill including the tip, and the amount each person needs to pay.
 
+- File: Paint Calculator.py
+  - Purpose: This file contains a Python program to calculate the amount of paint needed to paint a room. It prompts the user to enter the dimensions of the room (`length`, `width`, and `height`) and calculates the total area to be painted. It also takes into account the number of coats of paint needed and the coverage area per liter of paint. Finally, it calculates the total amount of paint required in liters.
+
+
 ## Usage
 To use this code, follow the instructions below:
 1. Clone or download the repository.
