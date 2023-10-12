@@ -1,3 +1,4 @@
+from colorama import Fore, Back, Style
 import subprocess
 import os
 
@@ -6,27 +7,31 @@ import os
 while True:
   try:
     print("\n")
-    # List all Python files in the current directory
-    files = [f for f in os.listdir('.') if f.endswith('.py')]
-    print(
-        "Python files in current directory ( main.py is the current file ):" +
-        "\n")
+    # List all Python files in the current directory (excluding main.py)
+    files = [f for f in os.listdir('.') if f.endswith('.py') and f != 'main.py']
+    print(Back.WHITE+Fore.BLACK+
+        " Python files in current directory: ")
+    print(Style.RESET_ALL+"\n")
     for i, file in enumerate(files):
-      print(f"{i+1}. {file}")
+      print(Fore.BLUE+f"{i+1}. {file}")
 
-    print("")
+    print(Style.RESET_ALL + "")
 
     # Ask the user which file to run
     print("To use input, click on the console screen.")
-    print("IMPORTANT: IF YOU WANT TO VIEW THE CODE, CLICK THE \"SHOW CODE\" ICON AT THE TOP RIGHT OF THE CONSOLE SCREE ( YOU WILL HAVE TO REURUN THE CODE TO VIEW THE PROGRAM AGAIN )")
-    print("\n")
+    print("")
+    print(Fore.RED+"IMPORTANT: IF YOU WANT TO VIEW THE CODE, CLICK THE \"SHOW CODE\" " \
+      "ICON AT THE TOP RIGHT OF THE CONSOLE SCREEN (YOU WILL HAVE TO " \
+      "RERUN THE CODE TO VIEW THE PROGRAM AGAIN)")
+
+    print("")
     file_number = int(
-        input("Enter the number of the file you want to run : ")) - 1
+        input(Fore.WHITE+"Enter the number of the file you want to run : ")) - 1
     file_to_run = files[file_number]
 
     print("\n")
     print("--")
-    print("\n")
+    print(Style.RESET_ALL+"\n")
 
     # Run the selected file
     subprocess.call(['python', file_to_run])
