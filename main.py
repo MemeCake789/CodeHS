@@ -24,7 +24,7 @@ while True:
       "ICON AT THE TOP RIGHT OF THE CONSOLE SCREEN (YOU WILL HAVE TO " \
       "RERUN THE CODE TO VIEW THE PROGRAM AGAIN)")
 
-    print("")
+    print("\n")
     file_number = int(
         input(Fore.WHITE+"Enter the number of the file you want to run : ")) - 1
     file_to_run = files[file_number]
