@@ -13,14 +13,6 @@ oval = canvas.create_oval(250, 50, 350, 150, fill="blue")
 # Draw a line
 line = canvas.create_line(50, 250, 350, 250)
 
-def drawLines():
-		for i in range(300, 0, -50):
-				canvas.create_line(50+i, 50+i, 50+i, 350-i)
-				canvas.create_line(50+i, 350-i, 350-i, 350-i)
-				canvas.create_line(350-i, 50+i, 350-i, 350-i)
-				canvas.create_line(50+i, 50+i, 350-i, 50+i)
-				window.after(1000)
 
-drawLines()
 
 window.mainloop()
